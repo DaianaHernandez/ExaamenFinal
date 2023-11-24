@@ -4,6 +4,8 @@
  */
 package ejercicio1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pablonoguera
@@ -28,6 +30,31 @@ public class Ejercicio1 {
                 + "\n"
                 + "Esto significa que cada número en la secuencia es la suma de los dos números anteriores.\nLa secuencia de Fibonacci tiene muchas aplicaciones en matemáticas y ciencias de la computación.\n");
 // Implementa la lógica del ejercicio 1 aquí
-    }
 
+    
+         
+         Scanner scanner = new scanner(System.in);
+         
+         int l = scanner.nextInt;
+         scanner.close();
+         
+         for(int i = 0; i < l; i++){
+             System.out.println(calcularFibonacci(i) + ",");
+         }
+        
+    }
+      private static calcularFibonacci(int numero){
+         
+          if(numero == 1)
+              return numero;
+          else{
+              return calcularFibonacci(numero - 1) + calcularFibonacci(numero - 2);
+      }
+    
+     
+   
+     
+     
+    }
+   
 }

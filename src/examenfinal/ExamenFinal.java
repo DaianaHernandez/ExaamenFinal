@@ -13,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 import utils.i2ascii;
 
 public class ExamenFinal {
@@ -132,3 +133,7 @@ public class ExamenFinal {
         }
     }
 }
+ 
+
+         
+      

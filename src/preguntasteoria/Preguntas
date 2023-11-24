@@ -7,7 +7,16 @@ Lista de Preguntas Seleccione 4 de ellas unicamente.
 Proporcione un ejemplo práctico de una clase que hereda de otra, 
 y explica la relación entre la clase padre e hija.
 
-R/
+R/La herencia se implementa mediante una sintaxis de jerarquia, donde existira
+ una superclase que va a heredar (extender) sus variables y comportamientos a las subclases.
+ La herencia nos permite manejar el codigo de manera modular y reutilizar codigo.
+
+Ejemplo: Vamos a crear la super clase Persona que se va a extender o a va heredar 
+a las clases hijas empleado y trabajador. La clases hijas o subclases van a heredar
+todos las variables y comportamientos de persona lo cual crea una relacion de herencia que 
+permite reutilizar codigo.
+
+
 
 
 
@@ -16,7 +25,18 @@ R/
 Proporcione un ejemplo concreto utilizando métodos y explique cómo 
 el polimorfismo facilita el diseño de programas flexibles y extensibles.
 
-R/
+R/El polimorfismo permite que un objeto tome varias formas. El polimorfismo 
+se puede dar de varias maneras y entre ellas se puede dar mediante la herencia;
+ un ejemplo de esta sería:
+
+ Creamos la clase Figura, esta clase va a un metodo para sumar los lados. Luego, 
+vamos a crear las clses rectangulo y triangulo y vamos a llamar en cada subclase 
+al metodo de la calse Figura "smarLados". Ahora bien este metodo va tomar distintas formas al 
+devolver datos de tipo entero en el triangulo y datos de tipo boleano en el retangulo. Basicamente,
+Llamamos al mismo metodo pero lo usamos de distitans formas para que regrese datos de diferente tipo.
+
+
+ 
 
 
 
@@ -24,7 +44,20 @@ R/
 Proporciona un ejemplo de una clase abstracta y explica cómo se diferencia
  de una clase regular.
 
-R/
+R/El proposito de una clase abstracta se puede entender como un molde o un patrón 
+de metodos no implementados que distintas clases del proyecto base van a tener 
+en común. Por lo tanto, esta clase abstracta va extender o heredar estos metodos
+ a las distintas subclases donde estos seran implementados a conveniencia segun
+ el problema a resolver.
+
+Ejemplo: Creo la clase abstracta Figura, esta clase voy a tener dos metodos uno 
+para calcular el area y el otro para calcular perimetro. Luego, esta clase la 
+voy a extender a la clase Cuadrado y Rectangulo. En estas clases voy a 
+implementar los metodos de la clase Figura en el cual voy asgignar la logica 
+matematica para clacular el area y perimetro segun la figura. Ambas clases heredan 
+y implementan los mismos metodos que se extienden de la clase abstracta.
+ Lo que permite reciclar codigo.
+
 
 
 
@@ -42,7 +75,14 @@ Proporciona un ejemplo de una función recursiva y discute cómo funciona,
  así como las precauciones que deben tomarse al utilizar la recursividad.
 
 
-R/
+R/ La recursividad es un metodo el cual se llama así mismo para re solver un 
+problema, el cual debe tener un caso base y la llamada recursiva.
+
+Ejemplo: 
+si quiero sacar el factorial de un numero debo primeramente establecer la 
+condicion del caso base que en este caso seria "if(n == 1) y si n es diferente de 1 
+hacemos la llamada recursiva donde n * factorial(n -1) el numero que tenga n se va a multiplicqar por n-1
+y factorial va ir guardanto el valor de las multiplicaciones hasta que llegue a 1.
 
 
 
